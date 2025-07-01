@@ -1,0 +1,201 @@
+/* Global Styles */
+body {
+    margin: 0;
+    background-image: url('images/p.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styles */
+  header {
+    color: rgb(243, 238, 238);
+    text-align: center;
+    padding-left: 100px;
+    font-size: 20px;
+    background-color: rgb(28, 42, 46);
+    padding: 10px;
+    box-shadow: 2px 3px rgb(255, 245, 245);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  header:hover {
+    background-color: rgb(48, 27, 27);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  
+  /* Sidebar Container */
+  .sidebar {
+    font-size: large;
+    height: 100vh;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(106, 100, 100, 0.79);
+    box-sizing: border-box;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 10;
+  }
+  
+  /* Profile Section */
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  .profile img:hover {
+    transform: scale(1.05);
+  }
+  .profile h2 {
+    color: rgb(255, 255, 255);
+    margin: 10px 0 5px;
+    font-size: 20px;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .social-icons a {
+    color: rgb(250, 244, 244);
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .social-icons a:hover {
+    color: #fff;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 10px;
+  }
+  nav.menu li {
+    color: #fff2f2;
+    gap: 50px;
+
+  }
+  nav.menu li a {
+    color: #12f3ff;
+    text-decoration: none;
+    gap: 20px;
+  }
+  nav.menu li a:hover {
+    color: #000000;
+  }
+  nav.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+
+  }
+  
+  /* Main Content Styles */
+  main {
+    margin-left: 250px;
+    padding: 30px;
+    color: #000000;
+    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  /* Section Styling */
+  section {
+    margin-bottom: 50px;
+    background-color: rgb(108, 102, 102);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #753550;
+    transition: transform 0.3s ease;
+  }
+  section:hover {
+    transform: translateY(-5px);
+  }
+  section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000000;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+  }
+  section p,
+  section ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e3dad8;
+  }
+  section ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-color: rgb(108, 102, 102);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #480722;
+  }
+  #contact h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  #contact p {
+    font-size: 16px;
+    color: #f0f0f0;
+    margin: 5px 0;
+  }
+  
+  /* Responsive Sidebar */
+  @media (max-width: 768px) {
+    .sidebar {
+      position: relative;
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .nav-links {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      padding: 0;
+    }
+    .nav-links a {
+      width: auto;
+      padding: 10px 15px;
+    }
+    main {
+      margin-left: 0;
+      padding: 20px;
+    }
+  }
+  
